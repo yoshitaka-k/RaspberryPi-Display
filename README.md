@@ -1,11 +1,12 @@
 RaspberryPi-Display
 ====
 
-Overview
+Raspberry Pi 7inch TouchDisplay に表示させるもの
 
 ## Description
 
-Raspberry Pi 7inch TouchDisplay に表示させるもの
+Raspberry Pi 立ち上げ時に、server.pyを実行。
+ブラウザでindex.htmlを開いてから、定期にclient.pyを実行。
 
 ## Install
 node module
