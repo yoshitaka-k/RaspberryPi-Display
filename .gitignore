@@ -99,3 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+node_modules/
+client_secret.json
+package-lock.json
