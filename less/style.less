@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+@import "less/_mixin.less";
+
+@import "less/fontawesome.less";
+@import "less/fa-regular.less";
+
+
+@font-face {
+ font-family: 'Noto Sans Japanese';
+ font-style: normal;
+ font-weight: 400;
+ src: local('NotoSansJP-Regular.otf'),
+      url(../webfonts/NotoSansJP-Regular.woff2) format('woff2'),
+      url(../webfonts/NotoSansJP-Regular.woff) format('woff'),
+      url(../webfonts/NotoSansJP-Regular.otf) format('opentype');
+}
+*, .mdc-card__title--large, .mdc-list{
+  font-family: 'Noto Sans Japanese', 'Helvetica neue', 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, .15);
+  i.far{margin-right: .5em}
+}
+::-webkit-scrollbar{display: none}
+
+.mdc-layout-grid__bottom{
+  padding-top: 0;
+}
+
+.mdc-card{
+  background-color: rgba(255, 255, 255, .75);
+  z-index: 1;
+  .mdc-card__primary{
+    position: relative;
+  }
+}
+
+.mdc-layout-grid__datetime{
+  padding-bottom: 0
+}
+
+.date-card, .time-card{
+  .mdc-card__primary{
+    .mdc-card__title--large{
+      font-size: 1.9em;
+      text-align: center;
+    }
+  }
+}
+
+.weather-card{
+  .mdc-card__primary{
+    .mdc-card__subtitle{text-align: right}
+    .mdc-card__primary__icon{
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 0;
+    }
+  }
+  .weather-card__list{
+    padding: 0 16px 16px;
+    .mdc-list-item{height: 40px}
+    .mdc-list-item__label{
+      width: 4em;
+      margin-right: 1em;
+      text-align: right;
+    }
+    .mdc-list-item__icon{
+      width: 24px;
+      height: 24px;
+      margin-left: 0;
+      margin-right: 32px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+}
+
+.schedule-card{
+  .schedule-card__list{
+    padding: 0 16px 16px;
+    .mdc-list-item{height: 60px}
+  }
+}

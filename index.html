@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Python3</title>
+  <link rel="stylesheet" type="text/css" href="./node_modules/material-components-web/dist/material-components-web.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body class="mdc-typography">
+  <div id="background"></div>
+  <div class="mdc-layout-grid mdc-layout-grid__datetime">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+        <div class="mdc-card date-card">
+          <section class="mdc-card__primary">
+            <h1 class="mdc-card__title mdc-card__title--large" id="date"></h1>
+          </section>
+        </div><!-- /.mdc-card.clock-card -->
+      </div><!-- /.mdc-layout-grid__cell -->
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+        <div class="mdc-card time-card">
+          <section class="mdc-card__primary">
+            <h1 class="mdc-card__title mdc-card__title--large" id="time"></h1>
+          </section>
+        </div><!-- /.mdc-card.clock-card -->
+      </div><!-- /.mdc-layout-grid__cell -->
+    </div><!-- /.mdc-layout-grid__inner -->
+  </div><!-- /.mdc-layout-grid -->
+
+  <div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+        <div class="mdc-card schedule-card">
+          <section class="mdc-card__primary">
+            <h1 class="mdc-card__title mdc-card__title--large"><i class="far fa-calendar-alt"></i>Schedule</h1>
+          </section>
+          <ul class="mdc-list schedule-card__list">
+            <li class="mdc-list-item">
+              <span class="mdc-list-item__text">
+                よてい
+                <span class="mdc-list-item__secondary-text">2018-01-02</span>
+              </span>
+            </li>
+          </ul>
+        </div><!-- /.mdc-card.schedule-card -->
+      </div><!-- /.mdc-layout-grid__cell -->
+
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+        <div class="mdc-card weather-card">
+          <section class="mdc-card__primary">
+            <h1 class="mdc-card__title mdc-card__title--large"><i class="far fa-sun"></i>Weather</h1>
+            <h2 class="mdc-card__subtitle"><i class="far fa-clock mdc-list-item__icon"></i><span id="weather_date"></span></h2>
+            <img class="mdc-card__primary__icon" id="icon">
+          </section>
+          <ul class="mdc-list weather-card__list">
+            <li class="mdc-list-item">
+              <span class="mdc-list-item__label">天気</span>
+              <span class="mdc-list-item__text">
+                <span id="weather"></span>
+                <span class="mdc-list-item__secondary-text" id="weather_dect"></span>
+              </span>
+            </li>
+            <li class="mdc-list-item">
+              <span class="mdc-list-item__label">気温</span>
+              <span class="mdc-list-item__text">
+                <span id="temp"></span>
+                <span class="mdc-list-item__secondary-text" id="temp_dect"></span>
+              </span>
+            </li>
+            <li class="mdc-list-item">
+              <span class="mdc-list-item__label">最低気温</span>
+              <span class="mdc-list-item__text">
+                <span id="temp_min"></span>
+                <span class="mdc-list-item__secondary-text" id="temp_min_dect"></span>
+              </span>
+            </li>
+            <li class="mdc-list-item">
+              <span class="mdc-list-item__label">最高気温</span>
+              <span class="mdc-list-item__text">
+                <span id="temp_max"></span>
+                <span class="mdc-list-item__secondary-text" id="temp_max_dect"></span>
+              </span>
+            </li>
+            <li class="mdc-list-item">
+              <span class="mdc-list-item__label">湿度</span>
+              <span class="mdc-list-item__text">
+                <span id="humidity"></span>
+                <span class="mdc-list-item__secondary-text" id="humidity_dect"></span>
+              </span>
+            </li>
+            <li class="mdc-list-item">
+              <span class="mdc-list-item__label">風</span>
+              <span class="mdc-list-item__text">
+                <span id="wind"></span>
+                <span class="mdc-list-item__secondary-text" id="wind_dect"></span>
+              </span>
+            </li>
+          </ul>
+        </div><!-- /.mdc-card.weather-card -->
+      </div><!-- /.mdc-layout-grid__cell -->
+    </div><!-- /.mdc-layout-grid__inner -->
+  </div><!-- /.mdc-layout-grid -->
+
+  <script src="./js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
