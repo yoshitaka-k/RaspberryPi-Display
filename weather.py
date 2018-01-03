@@ -94,6 +94,7 @@ class Weather:
       'Clouds': 'くもり',
       'Rain': '雨',
       'Snow': '雪',
+      'Dust': '砂',
     }
     return japanese[weather]
 
